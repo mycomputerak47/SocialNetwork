@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $(".up_nav_tab a").click(function() {
-        $(".up_nav_tab li").removeClass('active');
-        $(this).parent().addClass('active');
+    $(".nav-tabs a").click(function() {
+        $(".nav-tabs li").removeClass("active");
+        $(this).parent().addClass("active");
         var thisContent = $(this).html();
     });
     
-    $("#post").focusin(function(){
-        $(this).css("height",150);
-        $(this).next().show();
-    })
+             $(function() { 
+ $("html, body").animate({
+    scrollTop: $(".profCover").offset().top}, 1000);
+}); 
     
     $("#Unfriend").click(function(){
         alert('shs');
@@ -21,7 +21,7 @@ $(document).ready(function(){
         $.ajax({
             type:"get",
             url:"./includes/parts/profile/"+whichPAGE+".php",
-            data:"i=1",
+            data:"u="+this_user,
             success:function(e){$("#content").html(e);}
         })
     })

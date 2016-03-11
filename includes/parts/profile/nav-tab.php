@@ -5,7 +5,4 @@
   <li><a href="#">Friends</a></li>
   <li><a href="#">Photos</a></li>
 </ul>
-<script>
-    
-    </script>
-</div>
+</div><br/>
