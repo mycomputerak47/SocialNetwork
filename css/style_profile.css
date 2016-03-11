@@ -1,0 +1,93 @@
+html,body{
+                margin: 0;padding: 0;height: 100%;width: 100%;
+            }
+            .navbar{
+                background-color:#600080;
+                width: 100%
+            }
+            .navbar a,.navbar span,.navbar{
+                color: #FFF;
+            }
+            .navbar a:hover,.navbar span:hover,.navbar li:hover{
+                color: FA8B60;
+                background-color: #600080;
+            }
+            @media screen and (min-width:700px){
+            #search-form{
+                min-width: 600px;
+                margin-top: 10px;
+                margin-left: 50px
+            }
+            .profCover{
+                
+                min-height: 400px
+            }
+                .profPic{
+                    min-height: 400px
+                }
+                .profCoverStati{
+                    margin-top: 100px
+                }
+                .profCoverStati h2{
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                }
+            }
+            .glyphicon{font-size: 20px;color: white}
+            .profCover{background-color:#9C8AA5;background-image: url(images/cover.png);background-attachment:local;background-size: cover;color: white;border: 2px solid #FA8B60;filter: opacity(50%)}
+            .profPic{
+                
+                 /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+            }
+            .btn-profCover{
+                background-color: #089de3;
+                width: 150px;
+                transition: all 0.4s;
+            }
+            .btn-profCover:hover{
+                background-color: rgba(0,0,0,0);
+                width: 150px;
+                border: 3px solid #FA8B60;
+                color: white
+            }
+            .btn-submit{
+                background: #089de3;
+                color: white;
+                width: 100px;
+                transition: all 0.7s;
+            }
+            .btn-submit:hover{
+                background: rgba(0,0,0,0);
+                color: black;
+                border: 1px solid #FA8B60;
+            }
+            .posts{
+                border-top: 3px solid #089de3;
+                
+            }
+            .posts span{color:#600080}
+            .panel .panel-heading{
+                background-color:rgba(96,00,128,0.6);
+                color: white;
+                
+            }
+            .panel{
+                border: 1px solid #FA8B60
+            }
+            .panel img{
+                margin-top: 10px;
+            }
+            .profCoverStati .w3-container{
+                background-color: rgba(0,0,0,0.5);padding: 20px;
+            }
+            .profCoverStati #about{
+                background-color:rgba(96,00,128,0.6);
+                padding: 10px
+            }

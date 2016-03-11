@@ -7,26 +7,7 @@ if(!isset($_GET['u'])){
     die('<h2>Some error occured</h2>');
 }
 
-if(isset($_GET['u'])){
-    $this_user = $_GET['u'];
-    if(ctype_alnum($this_user)){
-        //check if user exists
-        $check = mysqli_query($conn, "SELECT * FROM users WHERE username='".$this_user."'");
-        if(mysqli_num_rows($check) == 1){
-            $get = mysqli_fetch_assoc($check);
-            $this_uname = $get['username'];
-            $this_fname = $get['fname'];
-            $this_lname = $get['lname'];
-            $this_about = $get['aboutme'];
-            $this_profilepic = $get['profile_pic'];
-        }
-        else{
-            echo '<h2>User does not exist</h2>';
-            exit();
-        }
-    }
-}
-    
+require_once __DIR__.'/resources/scripts/script21.php';
 ###################################################################
 //
     // ADD FRIEND BUTTON IF YOU ARE IN FRIEND LIST ELSE REMOVE FRIEND BUTTON
@@ -53,9 +34,11 @@ else
 $addfr_btn = 1; 
 }
 ###############################################################################
-
-
-include_once __DIR__.'/includes/parts/profile_pg.php';
-
+$title='profile';
+include_once __DIR__.'/includes/parts/head.php';
+include_once __DIR__.'/includes/parts/header.php';
+include_once __DIR__.'/includes/parts/profile/nav-tab.php';
+include_once __DIR__.'/includes/parts/profile/profile.php';
+include_once __DIR__.'/includes/parts/footer.php';
 ?>
 <script src="./js/profile.js"></script>
