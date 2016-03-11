@@ -1,0 +1,9 @@
+{
+    "language_supported":[
+        {
+            "language":"English",
+            "code":"en-US"
+        }
+    ],
+    "comment":"we support only english for now"
+}

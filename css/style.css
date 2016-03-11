@@ -1,0 +1,84 @@
+html,body{
+                padding: 0;
+                margin: 0;
+            }
+            /*body{min-height: 100%;border: 2px solid purple}*/
+            /*body{background-image: url(images/connectivity.jpg);background-repeat: no-repeat;background-size: cover; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;}*/
+            body{background: #412c63}
+            @font-face {
+    font-family: dominik;
+    src: url('font/dominik/Dominik.ttf');
+}
+            .login-form{background-color: white;padding: 28px;font-size: 16px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;letter-spacing: 1px;}
+            @media screen and (min-width:700px){
+            .login-box{
+                max-width: 30%;
+                margin: 0 auto;
+                color: #FA8B60;
+            }
+            }
+            @media screen and (max-width:700px){
+            .login-box{
+                max-width: 50%;
+                margin: 0 auto;
+            }
+            }
+            /* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+            .header{
+                height: 80px;
+                width: 100%;
+                background: #412c63;
+                margin-bottom: 10%;
+                text-align: center;
+                border-bottom: 2px solid #FA8B60;
+            }
+            .logo{
+                color: #FA8B60;
+                /*font-family: Arial, Helvetica, sans-serif;*/
+                font-family: dominik;
+                font-size: 48px;
+            }
+            .btn-submit{min-width: 100px;}
+            .btn-submit:focus{outline: 0;}
+            .btn-submit:hover{
+                background-color: #FA8B60;
+                color: aliceblue;
+                
+            }
+            .btn-tour{
+                background-color:#FA8B60;
+                color: white;
+                padding: 12px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 20px;
+                margin-bottom: 2%;
+                border: 4px solid white;
+                transition-duration:1s;
+            }
+            .btn-tour:hover{
+                background-color: #412c63;
+                border: 4px solid #FA8B60;
+                
+            }
+            footer{
+                font-family: "Lucida Console", Monaco, monospace;
+            }

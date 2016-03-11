@@ -1,0 +1,11 @@
+nav{
+    background-color: #412c63;
+    
+    color: #FA8B60;
+}
+nav a{
+    color: #FA8B60;
+}
+nav a:hover{
+    background-color: #FA8B60;
+}

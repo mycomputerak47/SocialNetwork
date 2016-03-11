@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Theme profile page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/w3.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            html,body{
+                margin: 0;padding: 0;height: 100%;width: 100%;
+            }
+            .navbar{
+                background-color:#600080;
+                width: 100%
+            }
+            .navbar a,.navbar span,.navbar{
+                color: #FFF;
+            }
+            .navbar a:hover,.navbar span:hover,.navbar li:hover{
+                color: FA8B60;
+                background-color: #600080;
+            }
+            @media screen and (min-width:700px){
+            #search-form{
+                min-width: 600px;
+                margin-top: 10px;
+                margin-left: 50px
+            }
+            .profCover{
+                
+                min-height: 400px
+            }
+                .profPic{
+                    min-height: 400px
+                }
+                .profCoverStati{
+                    margin-top: 100px
+                }
+                .profCoverStati h2{
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                }
+            }
+            .glyphicon{font-size: 20px;color: white}
+            .profCover{background-color:#9C8AA5;background-image: url(images/cover.png);background-attachment:local;background-size: cover;color: white;border: 2px solid #FA8B60;filter: opacity(50%)}
+            .profPic{
+                
+                 /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+            }
+            .btn-profCover{
+                background-color: #089de3;
+                width: 150px;
+                transition: all 0.4s;
+            }
+            .btn-profCover:hover{
+                background-color: rgba(0,0,0,0);
+                width: 150px;
+                border: 3px solid #FA8B60;
+                color: white
+            }
+            .btn-submit{
+                background: #089de3;
+                color: white;
+                width: 100px;
+                transition: all 0.7s;
+            }
+            .btn-submit:hover{
+                background: rgba(0,0,0,0);
+                color: black;
+                border: 1px solid #FA8B60;
+            }
+            .posts{
+                border-top: 3px solid #089de3;
+                
+            }
+            .posts span{color:#600080}
+            .panel .panel-heading{
+                background-color:rgba(96,00,128,0.6);
+                color: white;
+                
+            }
+            .panel{
+                border: 1px solid #FA8B60
+            }
+            .panel img{
+                margin-top: 10px;
+            }
+            .profCoverStati .w3-container{
+                background-color: rgba(0,0,0,0.5);padding: 20px;
+            }
+            .profCoverStati #about{
+                background-color:rgba(96,00,128,0.6);
+                padding: 10px
+            }
+        </style>
+    </head>
+<body>
+
+<nav class="navbar" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-align-justify" style="font-size:;color:white"></span>
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+         <li id="search-form">
+         <input type="text" class="form-control"  placeholder="Search Something...">
+         <span class="glyphicon glyphicon-search form-control-feedback"></span>
+</li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-home" ></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user" ></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-globe" ></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-refresh"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-wrench" ></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in" ></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+<div class="row profCover">
+  <div class="col-sm-8">
+    <div class="w3-container profCoverStati">
+        <div class="w3-half"><h2>145 Followers</h2></div>
+        <div class="w3-half"><h2>329 Following</h2></div>
+        <div class="w3-container"><button type="button" class="btn btn-profCover">Add as friend</button><br><br>
+        <button type="button" class="btn btn-profCover">Send Message</button><br><br>
+            <button type="button" class="btn btn-profCover">Poke</button></div>
+        <hr>
+        <h5 id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet nibh sed ex auctor porta. Praesent luctus consequat tortor nec malesuada.</h5>
+      </div>
+    </div>
+    <div class="col-sm-4 profPic">
+    <img class="img-responsive img-circle" src="./userdata/profilepics/default-profile-pic.jpg" alt="Chania" style="margin-top:15px;">
+        <h2>Lorem Ispum</h2>
+        <h5>Position, Company</h5>
+        <hr/>
+    </div>
+        </div>
+    
+        <ul class="nav nav-tabs">
+  <li class="active"><a href="#">Posts</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Friends</a></li>
+  <li><a href="#">Photos</a></li>
+</ul>
+        <br>
+        <div class="w3-container">
+        <div class="row">
+            <div class="col-sm-5">
+            <div class="panel-group">
+  <div class="panel">
+      <div class="panel-heading">Recent Photos</div>
+      <div class="panel-body">
+      <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+       <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+      </div>
+    </div><div class="panel">
+      <div class="panel-heading">Friends</div>
+      <div class="panel-body">
+                <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+          <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80">
+       <img src="images/connectivity.jpg" class="img-thumbnail" alt="Cinque Terre" width="80" height="80"></div>
+    </div>
+</div>
+            </div>
+            <div class="col-sm-7">
+            <input type="text" class="form-control" id="post" placeholder="Share something...">
+                <div style="display:none;margin-top:2px;" class="w3-row">
+    <div class="w3-col" style="width:70%"><p><input type="text" class="form-control" id="tags" placeholder="Add tags" ></p></div>
+    <div class="w3-col" style="width:30%;"><p><span><button class="btn btn-submit" style="display:non" id="postbtn">Share</button></span></p></div></div>
+                <hr>
+    <div class="posts">
+        <img src="userdata/profilepics/default-profile-pic.jpg" width="40" height="40"><span>Lorem Ispum</span>&nbsp;&nbsp;<small class="text-muted">21-12-2016</small>
+        <div >
+            Mauris dolor nulla, venenatis in placerat eu, congue vitae massa. Proin ultricies vulputate fringilla. Sed non velit ac nibh suscipit convallis. Aliquam erat volutpat. Vivamus tempus massa non turpis auctor, a scelerisque nunc aliquet. Morbi ultricies, erat non consequat posuere, orci mi rhoncus urna, a semper magna lorem a eros. Nulla facilisi. Mauris vehicula ex sed tortor tempor, quis blandit mauris aliquet. Aliquam quis turpis et ante aliquam ornare. Morbi eu sapien orci.
+        </div>
+        <div class="well well-sm">
+            <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></div>
+                </div><br><br>
+                <div class="posts">
+        <img src="userdata/profilepics/default-profile-pic.jpg" width="40" height="40"><span>Lorem Ispum</span>&nbsp;&nbsp;<small class="text-muted">21-12-2016</small>
+        <div >
+            Mauris dolor nulla, venenatis in placerat eu, congue vitae massa. Proin ultricies vulputate fringilla. Sed non velit ac nibh suscipit convallis. Aliquam erat volutpat. Vivamus tempus massa non turpis auctor, a scelerisque nunc aliquet. Morbi ultricies, erat non consequat posuere, orci mi rhoncus urna, a semper magna lorem a eros. Nulla facilisi. Mauris vehicula ex sed tortor tempor, quis blandit mauris aliquet. Aliquam quis turpis et ante aliquam ornare. Morbi eu sapien orci.
+        </div>
+        <div class="well well-sm">
+            <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></div>
+                </div><br><br>
+                <div class="posts">
+        <img src="userdata/profilepics/default-profile-pic.jpg" width="40" height="40"><span>Lorem Ispum</span>&nbsp;&nbsp;<small class="text-muted">21-12-2016</small>
+        <div >
+            Mauris dolor nulla, venenatis in placerat eu, congue vitae massa. Proin ultricies vulputate fringilla. Sed non velit ac nibh suscipit convallis. Aliquam erat volutpat. Vivamus tempus massa non turpis auctor, a scelerisque nunc aliquet. Morbi ultricies, erat non consequat posuere, orci mi rhoncus urna, a semper magna lorem a eros. Nulla facilisi. Mauris vehicula ex sed tortor tempor, quis blandit mauris aliquet. Aliquam quis turpis et ante aliquam ornare. Morbi eu sapien orci.
+        </div>
+        <div class="well well-sm">
+            <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></div>
+                </div><br><br>
+                <div class="posts">
+        <img src="userdata/profilepics/default-profile-pic.jpg" width="40" height="40"><span>Lorem Ispum</span>&nbsp;&nbsp;<small class="text-muted">21-12-2016</small>
+        <div >
+            Mauris dolor nulla, venenatis in placerat eu, congue vitae massa. Proin ultricies vulputate fringilla. Sed non velit ac nibh suscipit convallis. Aliquam erat volutpat. Vivamus tempus massa non turpis auctor, a scelerisque nunc aliquet. Morbi ultricies, erat non consequat posuere, orci mi rhoncus urna, a semper magna lorem a eros. Nulla facilisi. Mauris vehicula ex sed tortor tempor, quis blandit mauris aliquet. Aliquam quis turpis et ante aliquam ornare. Morbi eu sapien orci.
+        </div>
+        <div class="well well-sm">
+            <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></div>
+                </div><br><br>
+            </div>
+        </div>
+        </div>
+        <script>
+/*var i;
+            for(i=1;i<20;i++){
+                document.write("hello<br/>")
+            }*/
+        </script>
+    </div>
+     <script>
+         $(document).ready(function(){
+    $(".nav-tabs a").click(function() {
+        $(".nav-tabs li").removeClass('active');
+        $(this).parent().addClass('active');
+        var thisContent = $(this).html();
+    });
+             $("#post").focusin(function(){
+        $(this).css("height",150);
+        $(this).next().show();
+    })
+             $(function() { 
+ $('html, body').animate({
+    scrollTop: $('.profCover').offset().top}, 1000);
+}); 
+         });
+    </script>
+    <nav class="navbar text-center" style="margin-bottom:0">
+        <span>Powered by SocialNetwork</span>
+        <p>An open source social network</p>
+    </nav>
+    </body>
+</html>
