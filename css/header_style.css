@@ -1,3 +1,18 @@
+html,body{
+                margin: 0;padding: 0;height: 100%;width: 100%;
+            }
+            .navbar{
+                background-color:#600080;
+                width: 100%
+            }
+            .navbar a,.navbar span,.navbar{
+                color: #FFF;
+            }
+            .navbar a:hover,.navbar span:hover,.navbar li:hover{
+                color: #089de3;
+                background-color: #600080;
+            }
+.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:089de3}
 nav{
     background-color: #412c63;
     
@@ -8,4 +23,7 @@ nav a{
 }
 nav a:hover{
     background-color: #FA8B60;
+}
+nav span{
+    color:bisque
 }

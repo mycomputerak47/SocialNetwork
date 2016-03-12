@@ -1,17 +1,4 @@
-html,body{
-                margin: 0;padding: 0;height: 100%;width: 100%;
-            }
-            .navbar{
-                background-color:#600080;
-                width: 100%
-            }
-            .navbar a,.navbar span,.navbar{
-                color: #FFF;
-            }
-            .navbar a:hover,.navbar span:hover,.navbar li:hover{
-                color: FA8B60;
-                background-color: #600080;
-            }
+
             @media screen and (min-width:700px){
             #search-form{
                 min-width: 600px;
