@@ -1,3 +1,12 @@
 {
-    "this":"this"
+    "general":"General Settings",
+    "about":"About",
+    "dangerZone":"Danger Zone",
+    "fname":"First Name",
+    "lname":"Last Name",
+    "update":"Update",
+    "success":"Success",
+    "actionSuccess":"Your action has been successfully performed.",
+    "alert":"Alert",
+    "alertmsg":"Sorry, we encountered some error while performing your action."
 }
