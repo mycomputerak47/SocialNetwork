@@ -16,6 +16,7 @@
 </li>
         
       </ul>
+        <?php if(isset($_SESSION['id'])){ ?>
       <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-home" ></span></a></li>
           <li><a href="#"><span class="glyphicon glyphicon-user" ></span></a></li>
@@ -23,8 +24,8 @@
           <li><a href="#"><span class="glyphicon glyphicon-globe" ></span></a></li>
           <li><a href="#"><span class="glyphicon glyphicon-refresh"></span></a></li>
           <li><a href="#"><span class="glyphicon glyphicon-wrench" ></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in" ></span></a></li>
-      </ul>
+        <li><a href="./resources/scripts/logout.php"><span class="glyphicon glyphicon-log-in" ></span></a></li>
+      </ul><?php }?>
     </div>
   </div>
 </nav>

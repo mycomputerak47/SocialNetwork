@@ -9,5 +9,9 @@ require_once(dirname(__FILE__).'/includes/imp/get_connection_details.php');
 //check user is logged in
 require_once(dirname(__FILE__).'/includes/imp/checkLoggedIn.php');
 //print page cotent 
-include_once dirname(__FILE__).'/includes/parts/main_pg.php';
+print('logged in as : '.$l_fname);
+$title= $this_network;
+include_once __DIR__.'/includes/parts/head.php';
+include_once __DIR__.'/includes/parts/header.php';
+
 ?>

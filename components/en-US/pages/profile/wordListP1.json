@@ -4,5 +4,13 @@
     "addAsFriend":"Add as friend",
     "sendMessage":"Send Message",
     "poke":"Poke",
-    "username":"Username"
+    "username":"Username",
+    "profile":"Profile",
+    "posts":"Posts",
+    "about":"About",
+    "friends":"Friends",
+    "photos":"Photos",
+    "shareSomething":"Share Something ...",
+    "addTags":"Add tags",
+    "share":"share"
 }
