@@ -16,5 +16,11 @@
     "gender":"Gender",
     "male":"Male",
     "female":"Female",
-    "other":"Others"
+    "other":"Others",
+    "uraddress":"Your Address",
+    "street":"Street",
+    "zip":"Zip",
+    "city":"City",
+    "state":"State",
+    "country":"Country"
 }

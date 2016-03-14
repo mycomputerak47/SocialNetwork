@@ -7,7 +7,7 @@ if(!isset($_GET['u'])){
     die('<h2>Some error occured</h2>');
 }
 
-require_once __DIR__.'/resources/scripts/script21.php';
+require_once __DIR__.'/resources/scripts/script11.php';
 ###################################################################
 //
     // ADD FRIEND BUTTON IF YOU ARE IN FRIEND LIST ELSE REMOVE FRIEND BUTTON
