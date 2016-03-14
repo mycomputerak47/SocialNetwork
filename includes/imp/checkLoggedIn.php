@@ -17,6 +17,7 @@ if(isset($_SESSION['id'])){
         $l_lname = $chk_res['lname'];
         $l_uname = $chk_res['username'];
         $l_profPic = $chk_res['profile_pic'];
+        $l_about = $chk_res['aboutme'];
     if($l_profPic == NULL){
         $l_profPic = 'userdata/profilepics/default-profile-pic.jpg';    
     }else{

@@ -5,8 +5,16 @@
     "fname":"First Name",
     "lname":"Last Name",
     "update":"Update",
+    "about":"About",
+    "status":"Status",
     "success":"Success",
     "actionSuccess":"Your action has been successfully performed.",
     "alert":"Alert",
-    "alertmsg":"Sorry, we encountered some error while performing your action."
+    "alertmsg":"Sorry, we encountered some error while performing your action.",
+    "statusBox":"This is something about me.",
+    "profilePic":"Your current Profile Pic",
+    "gender":"Gender",
+    "male":"Male",
+    "female":"Female",
+    "other":"Others"
 }
