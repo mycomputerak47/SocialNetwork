@@ -21,7 +21,7 @@ echo <<<THIS
   </div>
 <hr/ >
 <label for="none">{$var092['uraddress']}:</label><br>
-<form class="form-inline" role="form">
+<div class="form-inline" role="form">
   <div class="form-group">
     <label for="street">{$var092['street']}:</label>
     <input type="text" class="form-control" id="street" value="{$l_street}">
@@ -32,7 +32,7 @@ echo <<<THIS
   </div>
   
   </div><br><br>
-  <form class="form-inline" role="form">
+  <div class="form-inline" role="form">
   <div class="form-group">
     <label for="city">{$var092['city']}:</label>
     <input type="text" class="form-control" id="city" value="{$l_city}">
@@ -43,16 +43,26 @@ echo <<<THIS
   </div>
   </div>
   <br><br>
-  <form class="form-inline" role="form">
+  <div class="form-inline" role="form">
   <div class="form-group">
     <label for="country">{$var092['country']}:</label>
     <input type="text" class="form-control" id="country" value="{$l_country}">
   </div>
-  <button type="submit" class="btn btn-default btn-submit">{$var092['update']}</button>
+  <button type="submit" class="btn btn-default btn-submit" id="chngAddress">{$var092['update']}</button>
   </div>
-</form>
+</div>
 <hr/>
-
+<div class="form-inline" role="form">
+  <div class="form-group">
+    
+    <label for="country">{$var092['DOB']}:</label>
+    
+    <input type="date" class="form-control" id="DOB" value="{$l_DOB}">
+  </div>
+  <button type="button" class="btn btn-default btn-submit" id="chngDOB">{$var092['update']}</button>
+  </div>
+</div>
+<hr/>
   </div>
 </div>
 </div>

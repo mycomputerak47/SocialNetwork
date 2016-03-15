@@ -29,7 +29,7 @@ $var079 = json_decode($this_page_words,TRUE);
             .login-box{
                 max-width: 30%;
                 margin: 0 auto;
-                color: #FA8B60;
+                color: #600080;
                 margin-top:10%;
             }
             }

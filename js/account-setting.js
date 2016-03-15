@@ -53,3 +53,30 @@ $("#chngGender").click(function(){
         error:function(e){console.log(e)}
     });  
 });
+
+$("#chngAddress").click(function(){
+    var street = $("#street").val();
+    var zip = $("#zip").val();
+    var city = $("#city").val();
+    var state = $("#state").val();
+    var country = $("#country").val();
+    var street = $("#street").val();
+    $.ajax({
+        type:"GET",
+        url:"./resources/scripts/script28.php",
+        data:"user="+user+"&street="+street+"&zip="+zip+"&city="+city+"&state="+state+"&country="+country,
+        success:function(e){if(e){$("#result").html(e)}else{$("#result").html('<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>'+alert+'!</strong>'+alertmsg+'</div>')}},
+        error:function(e){console.log(e)}
+    });  
+});
+//change DOB
+$("#chngDOB").click(function(){
+    var DOB = $("#DOB").val();
+    $.ajax({
+        type:"GET",
+        url:"./resources/scripts/script29.php",
+        data:"DOB="+DOB+"&user="+user,
+        success:function(e){if(e){$("#result").html(e)}else{$("#result").html('<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>'+alert+'!</strong>'+alertmsg+'</div>')}},
+        error:function(e){console.log(e)}
+    });  
+});

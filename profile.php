@@ -41,5 +41,5 @@ include_once __DIR__.'/includes/parts/profile/nav-tab.php';
 include_once __DIR__.'/includes/parts/profile/profile.php';
 include_once __DIR__.'/includes/parts/footer.php';
 ?>
-<script type="text/javascript">var this_user = '<?php print($this_user)?>'</script>
+<script type="text/javascript">var this_user = '<?php print($this_user)?>';var me_user = '<?php print($l_uname)?>'</script>
 <script src="./js/profile.js"></script>

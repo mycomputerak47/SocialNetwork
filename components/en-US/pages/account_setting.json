@@ -22,5 +22,7 @@
     "zip":"Zip",
     "city":"City",
     "state":"State",
-    "country":"Country"
+    "country":"Country",
+    "DOB":"Date of Birth",
+    "currentlySetTo":"Current Date of Birth"
 }

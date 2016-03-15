@@ -2,7 +2,7 @@
 require_once __DIR__.'/../../imp/get_connection_details.php';
 require_once __DIR__.'/../../imp/checkLoggedIn.php';
 require_once __DIR__.'/../../../resources/scripts/script11.php';
-$this_page_words = file_get_contents(__DIR__.'/../../../components/'.$language.'/pages/profile/wordListP1.json');
+$this_page_words = file_get_contents(__DIR__.'/../../../components/'.$language.'/pages/profile.json');
 $var077 = json_decode($this_page_words,TRUE);
 
 echo <<<THIS

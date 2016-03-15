@@ -11,6 +11,7 @@ if(isset($_GET['u'])){
             $l_city = $get['city'];
             $l_state = $get['state'];
             $l_country = $get['country'];
+            $l_DOB = $get['birthday'];
         }
         else{
             echo '<h2>User does not exist</h2>';

@@ -2,6 +2,9 @@
     "followers":"Followers",
     "following":"Following",
     "addAsFriend":"Add as friend",
+    "addfrbtn":"addfrbtn",
+    "unriend":"Unfriend",
+    "unfriendbtn":"unfriendbtn",
     "sendMessage":"Send Message",
     "poke":"Poke",
     "username":"Username",
@@ -12,5 +15,11 @@
     "photos":"Photos",
     "shareSomething":"Share Something ...",
     "addTags":"Add tags",
-    "share":"share"
+    "share":"share",
+    "basicInfo":"Basic Information",
+    "contactDetails":"Contact Details",
+    "DOB":"Date of Birth",
+    "fname":"First Name",
+    "lname":"Last Name",
+    "uname":"Username"
 }

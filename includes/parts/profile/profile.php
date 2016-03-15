@@ -1,9 +1,25 @@
 <?php
 require_once __DIR__.'/../../imp/get_connection_details.php';
 require_once __DIR__.'/../../../resources/scripts/script11.php';
-$this_page_words = file_get_contents(__DIR__.'/../../../components/'.$language.'/pages/profile/wordListP1.json');
+require_once __DIR__.'/../../../resources/scripts/script30.php';
+$this_page_words = file_get_contents(__DIR__.'/../../../components/'.$language.'/pages/profile.json');
 $var076 = json_decode($this_page_words,TRUE);
-
+if( $addfr_btn == 1){
+    //exit();
+$addOrRemove  = $var076['addAsFriend'];
+$addorremove_btn = $var076['addfrbtn'];    
+}
+elseif($this_uname == $l_uname){
+    $addOrRemove  = '<style>#addfrbtn,#unfriendbtn,#sendmsgbtn,#pokebtn{display:none}</style>';
+    $addorremove_btn = 'addfrbtn';
+}
+elseif($addfr_btn == 0){
+ 
+    $addOrRemove  = $var076['unriend'];
+    $addorremove_btn = $var076['unfriendbtn'];
+}
+else{//do nothing
+}
 echo <<<THIS
 <div class="container" id="content">
 <div class="row profCover">
@@ -11,9 +27,9 @@ echo <<<THIS
     <div class="w3-container profCoverStati">
         
         <div class="w3-container">
-        <div class="w3-half"><button type="button" class="btn btn-profCover">{$var076['addAsFriend']}</button><br><br>
-        <button type="button" class="btn btn-profCover">{$var076['sendMessage']}</button><br><br>
-            <button type="button" class="btn btn-profCover">{$var076['poke']}</button></div>
+        <div class="w3-half"><button type="button" class="btn btn-profCover" id="{$addorremove_btn}">{$addOrRemove}</button><br><br>
+        <button type="button" class="btn btn-profCover" id="sendmsgbtn">{$var076['sendMessage']}</button><br><br>
+            <button type="button" class="btn btn-profCover" id="pokebtn">{$var076['poke']}</button></div>
             <div class="w3-half">
         <h2>145 {$var076['followers']} </h2>
         <br>
